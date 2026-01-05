@@ -47,3 +47,24 @@ genre = input("장르 조회: ")
 
 if genre in genres_four:
     print(genre)
+
+
+# D-6: 리스트에서 특정 인덱스 요소 출력
+target = gerne_three[1]
+print(target)
+
+# D-7 : 입력받은 인덱스로 요소 접근
+# 내가 푼 방법
+idx=int(input("숫자를 입력하시오: "))
+print(gerne_three[idx])
+
+# 유지 보수 좋은 코드
+idx=int(input("숫자를 입력하시오: "))
+target1 = gerne_three[idx]
+print(target1)
+
+# D-8 : 전체 목록 번호와 함께 출력
+gerne_list = ["jazz","hiphop","band","dance"]
+
+for idx,ger_name in enumerate(gerne_list):
+    print(idx,ger_name)
